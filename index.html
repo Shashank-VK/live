@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shashankareddy Karamudi — Live Projects</title>
+<style>
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; max-width: 900px; margin: 2rem auto; padding: 0 1rem; line-height: 1.55; color: #111; }
+  h1 { font-size: 1.8rem; } h2 { margin-top: 2rem; border-bottom: 1px solid #ddd; padding-bottom: .25rem; }
+  table { border-collapse: collapse; width: 100%; } th, td { text-align: left; padding: .4rem .6rem; border-bottom: 1px solid #eee; vertical-align: top; }
+  a { color: #0b5fff; } .tag { display: inline-block; background: #eef4ff; border-radius: 999px; padding: 0 .5rem; font-size: .8rem; }
+  .muted { color: #555; font-size: .9rem; }
+</style>
+</head>
+<body>
+<h1>Shashankareddy Karamudi — Live Projects</h1>
+<p class="muted">Every project below is public on GitHub. The live demos are running right now; everything else is open code you can read, clone, and run. No demo here fakes a result — sample outputs are shown only where they were actually measured.</p>
+
+<h2>Live demos</h2>
+<table>
+<tr><th>Project</th><th>Live link</th><th>What it does</th></tr>
+<tr><td>Wildlife Detection &amp; Live Count</td><td><a href="https://huggingface.co/spaces/shashankvkaramudi/wildlife-detection">Hugging Face Space</a></td><td>Real-time wildlife detection with YOLOv8 + ByteTrack tracking, live per-species counting, Pandas analytics and a Streamlit dashboard.</td></tr>
+<tr><td>DebugDost</td><td><a href="https://huggingface.co/spaces/shashankvkaramudi/debugdost">Hugging Face Space</a></td><td>Paste a Python traceback, get the root cause, a plain-language explanation, and fix steps — in English, Hindi, or Kannada.</td></tr>
+<tr><td>NAVIQON landing</td><td><a href="https://shashank-vk.github.io/naviqon-landing/">GitHub Pages</a></td><td>Scroll-driven brand experience built around a 96-frame cinematic image sequence.</td></tr>
+<tr><td>Portfolio</td><td><a href="https://shashank-vk.github.io">shashank-vk.github.io</a></td><td>Portfolio site: flagship engineering work, stack, and live GitHub telemetry.</td></tr>
+</table>
+
+<h2>Newly public code</h2>
+<table>
+<tr><th>Project</th><th>Link</th><th>Notes</th></tr>
+<tr><td>job-catcher</td><td><a href="https://github.com/Shashank-VK/job-catcher">GitHub</a></td><td>ATS watcher: polls public Greenhouse / Ashby / Lever feeds, diffs against a seen-list, queues fresher roles for triage. 54 tests passing. It never certifies, verifies pay, or applies.</td></tr>
+<tr><td>fcar-local</td><td><a href="https://github.com/Shashank-VK/fcar-local">GitHub</a></td><td>Deterministic, offline honesty checker for tailored resumes. Python 3 stdlib only, zero network calls, zero LLM inferences. 75 tests passing.</td></tr>
+</table>
+
+<h2>All open-source repos</h2>
+<table>
+<tr><th>Repo</th><th>What it is</th></tr>
+<tr><td><a href="https://github.com/Shashank-VK/voicepilot">voicepilot</a></td><td>Low-latency voice agent: speech-to-text → LangGraph LLM agent → text-to-speech, with Gradio UI. <span class="tag">demo blocked — see below</span></td></tr>
+<tr><td><a href="https://github.com/Shashank-VK/groundedqa">groundedqa</a></td><td>RAG Q&amp;A app with a benchmark playground and evaluation harness (FastAPI + pgvector).</td></tr>
+<tr><td><a href="https://github.com/Shashank-VK/green-grid-ai">green-grid-ai</a></td><td>EV-charging site intelligence for Bengaluru — FastAPI backend analysing 210K+ grid and demand records with Pandas + SQL.</td></tr>
+<tr><td><a href="https://github.com/Shashank-VK/projectflow">projectflow</a></td><td>Task/issue tracker — Django REST API + React frontend with Kanban board.</td></tr>
+<tr><td><a href="https://github.com/Shashank-VK/evalforge">evalforge</a></td><td>LLM evaluation harness — CLI + HTML reports with deterministic mock-gated CI.</td></tr>
+<tr><td><a href="https://github.com/Shashank-VK/plantdoc-grounded-qa">plantdoc-grounded-qa</a></td><td>Citation-grounded plant-disease Q&amp;A (BM25 retrieval): 92% citation precision, 0% hallucination on a 25-question benchmark; 32-test suite.</td></tr>
+<tr><td><a href="https://github.com/Shashank-VK/aiprise-vendor-normalizer">aiprise-vendor-normalizer</a></td><td>KYC vendor normalizer: 3 vendor APIs into one RiskSignal schema, /decision endpoint with reasoning trace + audit log; 23-test suite.</td></tr>
+<tr><td><a href="https://github.com/Shashank-VK/stripe-webhook-idempotency">stripe-webhook-idempotency</a></td><td>Stripe webhook idempotency layer: exactly-once ledger verified under a 1,000-delivery redelivery storm; 36-test suite.</td></tr>
+<tr><td><a href="https://github.com/Shashank-VK/indic-voice-agent-eval">indic-voice-agent-eval</a></td><td>Indic voice-agent evaluation: faster-whisper STT word-error-rate and latency benchmarks over 40 utterances; 36-test suite.</td></tr>
+<tr><td><a href="https://github.com/Shashank-VK/agent-harness-eval">agent-harness-eval</a></td><td>Agent harness eval: baseline vs chain-of-thought LLM agents on 15 DSA tasks — accuracy, token cost and latency compared; 28-test suite.</td></tr>
+<tr><td><a href="https://github.com/Shashank-VK/qa-e2e-lab">qa-e2e-lab</a></td><td>QA E2E lab: Playwright UI tests + Newman/Postman API tests against a demo app — 13-test suite.</td></tr>
+<tr><td><a href="https://github.com/Shashank-VK/flask-ledger-api">flask-ledger-api</a></td><td>LedgerLite: production-shaped Flask REST API — JWT auth, SQLAlchemy, expense ledger with monthly summaries; 34-test pytest suite.</td></tr>
+<tr><td><a href="https://github.com/Shashank-VK/flask-async-jobs">flask-async-jobs</a></td><td>ReportForge: Flask + Celery background job service — CSV sales-report processing with idempotent submission; 23-test pytest suite.</td></tr>
+<tr><td><a href="https://github.com/Shashank-VK/flask-ml-serving">flask-ml-serving</a></td><td>Flask ML-serving API: scikit-learn classifier behind a validated, cached, rate-limited inference endpoint; 24-test pytest suite.</td></tr>
+<tr><td><a href="https://github.com/Shashank-VK/apertureID">apertureID</a></td><td>FastAPI identity service — JWT auth with bcrypt, refresh tokens, RBAC (admin/user); 25-test suite.</td></tr>
+<tr><td><a href="https://github.com/Shashank-VK/truestate">truestate</a></td><td>TrueState: real-estate platform — property catalog, user accounts with RBAC, inquiry workflow and admin console; 23-test suite.</td></tr>
+<tr><td><a href="https://github.com/Shashank-VK/sql-analytics-lab">sql-analytics-lab</a></td><td>SQL analytics lab: DuckDB analytical queries over sample datasets, validated with pytest.</td></tr>
+<tr><td><a href="https://github.com/Shashank-VK/churn-ml-lab">churn-ml-lab</a></td><td>Classical ML &amp; PyTorch tabular benchmark laboratory for customer churn prediction.</td></tr>
+<tr><td><a href="https://github.com/Shashank-VK/ts-express-api">ts-express-api</a></td><td>TypeScript Express API.</td></tr>
+<tr><td><a href="https://github.com/Shashank-VK/mcp-agent-demo">mcp-agent-demo</a></td><td>MCP server with useful tools + a LangGraph agent client that uses them over MCP.</td></tr>
+<tr><td><a href="https://github.com/Shashank-VK/seo-inspector-saas">seo-inspector-saas</a></td><td>Instant SEO &amp; Meta Tag Health Inspector built with Next.js 16 and Cheerio. <span class="tag">needs Vercel connect</span></td></tr>
+<tr><td><a href="https://github.com/Shashank-VK/annapurneshwari-clinic">annapurneshwari-clinic</a></td><td>Clinic website (Next.js + Tailwind). <span class="tag">needs Vercel connect</span></td></tr>
+<tr><td><a href="https://github.com/Shashank-VK/Ai-solar-panel">Ai-solar-panel</a></td><td>Solar-panel analysis notebooks, scripts, and a Streamlit app. <span class="tag">needs Streamlit connect</span></td></tr>
+<tr><td><a href="https://github.com/Shashank-VK/brute-force">brute-force</a></td><td>Next.js app. Its previously recorded Vercel link no longer responds (404). <span class="tag">needs Vercel reconnect</span></td></tr>
+<tr><td><a href="https://github.com/Shashank-VK/3d_commercial_ad">3d_commercial_ad</a></td><td>3D commercial ad assets and media.</td></tr>
+<tr><td><a href="https://github.com/Shashank-VK/unvibecode-stem-fallback-repro">unvibecode-stem-fallback-repro</a></td><td>Minimal reproductions for FinanceFlash/unvibecode#266.</td></tr>
+<tr><td><a href="https://github.com/Shashank-VK/muse-setup-guide">muse-setup-guide</a></td><td>Muse AI invite code (230HAS) setup guide, redeem steps &amp; FAQ.</td></tr>
+<tr><td><a href="https://github.com/Shashank-VK/Shashank-VK">Shashank-VK</a></td><td>GitHub profile README.</td></tr>
+<tr><td><a href="https://github.com/Shashank-VK/god_repo">god_repo</a></td><td>superior-os: AI engineering operating system — vendored agent skills, reviewer rubrics and build specs.</td></tr>
+<tr><td><a href="https://github.com/Shashank-VK/Build-it">Build-it</a></td><td>BUILDER-OS build method and project scaffolding.</td></tr>
+</table>
+
+<h2>Not live yet — and why</h2>
+<ul>
+<li><b>VoicePilot</b> — the free Hugging Face tier allows 2 ZeroGPU Spaces and both are in use (wildlife-detection, debugdost). A third needs a freed slot, a community grant, or a paid tier. No code was changed to fake a demo.</li>
+<li><b>seo-inspector-saas, annapurneshwari-clinic</b> — Next.js apps; the natural host is Vercel's free hobby tier, which needs the owner's account connection.</li>
+<li><b>Ai-solar-panel</b> — Streamlit app; the natural host is Streamlit Community Cloud, which needs the owner's account connection.</li>
+<li><b>brute-force</b> — its previously recorded Vercel deployment link returns 404; needs a Vercel reconnect/redeploy.</li>
+<li><b>supplement-yield-analyst</b> — the repository is empty; there is nothing to publish yet.</li>
+<li><b>all-in-one Android file viewer</b> — not shippable: foundation step not passing, blocked on a Maven Central approval.</li>
+<li><b>hyperswitch</b> — a fork of someone else's project, deliberately excluded from this page.</li>
+</ul>
+<p class="muted">Built 2026-10-30. Links verified live on the day unless marked otherwise.</p>
+</body>
+</html>
